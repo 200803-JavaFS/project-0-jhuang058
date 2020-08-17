@@ -1,21 +1,22 @@
 package com.revature.models;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Account {
 	
 	private int accountNumber;
 	private String accountType;
-	private User accountOwner;
 	private double accountBalance;
-	private String accountStatus = "pending";
-	
+	private String accountStatus;
+	private List<User> accountOwner;
+		
 	public Account() {
 		super();
 	}
 
 	
-	public Account(String accountType, User accountOwner, double accountBalance,
+	public Account(String accountType, List<User> accountOwner, double accountBalance,
 			String accountStatus) {
 		super();
 		this.accountType = accountType;
@@ -24,7 +25,7 @@ public class Account {
 		this.accountStatus = accountStatus;
 	}
 	
-	public Account(int accountNumber, String accountType, User accountOwner, double accountBalance,
+	public Account(int accountNumber, String accountType, List<User> accountOwner, double accountBalance,
 			String accountStatus) {
 		super();
 		this.accountNumber = accountNumber;
@@ -50,11 +51,11 @@ public class Account {
 		this.accountType = accountType;
 	}
 
-	public User getAccountOwner() {
+	public List<User> getAccountOwner() {
 		return accountOwner;
 	}
 
-	public void setAccountOwner(User user) {
+	public void setAccountOwner(List<User> user) {
 		this.accountOwner = user;
 	}
 
@@ -125,12 +126,24 @@ public class Account {
 
 	@Override
 	public String toString() {
-		return "Account [accountNumber=" + accountNumber + ", accountType=" + accountType + ", accountOwner="
-				+ accountOwner.getFirstName() + " " + accountOwner.getLastName() + ", accountBalance=" + accountBalance + ", accountStatus=" + accountStatus + "]";
+		
+		List <String> ownerNames = listOwnerNames();
+		
+		return "Account [accountNumber=" + accountNumber + ", accountType=" + accountType + ", accountOwner(s)="
+				+ String.join(", ", ownerNames) + ", accountBalance=" + accountBalance + ", accountStatus=" + accountStatus + "]";
 	}
 
+	public List<String> listOwnerNames() {
+		
+		List <String >ownerNames = new ArrayList<String>();
 	
-
+		for (User u : accountOwner) {
+			ownerNames.add(u.getFirstName() +" "+u.getLastName());
+		}
+		
+		return ownerNames;
+	
+	}
 }
 	
 	

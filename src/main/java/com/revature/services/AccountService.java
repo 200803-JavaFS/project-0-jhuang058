@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import com.revature.dao.AccountDAO;
 import com.revature.dao.IAccountDAO;
 import com.revature.models.Account;
+import com.revature.models.User;
 
 public class AccountService {
 	
@@ -88,15 +89,70 @@ public class AccountService {
 		return b;
 	}
 
-	public boolean insertAccount(Account a) {
-		log.info("New account inserted");
-		return dao.addAccount(a);
+	public boolean insertAccount(Account a, List<User> owners) {
+		log.info("Inserting new account");
+		
+		 return dao.addAccount(a, owners);
 		
 	}
 
 	public boolean updateAccount(Account a) {
 		log.info("Account updated");
 		return dao.updateAccount(a);
+		
+	}
+	
+	
+	public double[] transferMoney(Account a1, Account a2, double amt) {
+
+		a1.setAccountBalance(a1.getAccountBalance() - amt);
+		a2.setAccountBalance(a2.getAccountBalance() + amt);
+
+		if (updateAccount(a1) && updateAccount(a2)) {
+			log.info("Transfered $" + amt + " from Account *****"
+					+ Integer.toString(a1.getAccountNumber()).substring(5) + "\n" + "to Account *****"
+					+ Integer.toString(a2.getAccountNumber()).substring(5));
+			double[] balances = { a1.getAccountBalance(), a2.getAccountBalance() };
+			System.out.println("Remaining account balance in account: $"+ a1.getAccountBalance());
+			return balances;
+		} else {
+			log.info("Transfer has failed.");
+			return null;
+		}
+	}
+
+	public double withdraw(Account a1, double amt) {
+		a1.setAccountBalance(a1.getAccountBalance() - amt);
+		if (updateAccount(a1)) {
+			log.info("Withdrew $" + amt + " from  "+a1.getAccountType()+" Account *****"
+					+ Integer.toString(a1.getAccountNumber()).substring(5));
+			System.out.println("Remaining account balance: $"+ a1.getAccountBalance());
+			return a1.getAccountBalance();
+		} else {
+			log.info("Withdraw has failed.");
+			return 0;
+		}
+	}
+
+	public double deposit(Account a1, double amt) {
+		a1.setAccountBalance(a1.getAccountBalance() + amt);
+		if (updateAccount(a1)) {
+			log.info("Deposited $" + amt + " into "+a1.getAccountType()+" Account *****"
+					+ Integer.toString(a1.getAccountNumber()).substring(5));
+			System.out.println("Updated account balance: $"+ a1.getAccountBalance());
+			return a1.getAccountBalance();
+		} else {
+			log.info("Deposit has failed.");
+			return 0;
+		}
+		
+	}
+
+	public void insertOwnership(List<User> owners) {
+		log.info("Updating account ownership");
+		for (User u : owners) {
+			dao.addOwnership(u);
+		}
 		
 	}
 

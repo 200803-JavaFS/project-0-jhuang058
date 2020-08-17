@@ -1,0 +1,309 @@
+2020-08-16 18:58:37 INFO  Driver:14 - The application has started
+2020-08-16 18:59:09 INFO  Driver:14 - The application has started
+2020-08-16 19:00:28 INFO  Driver:14 - The application has started
+2020-08-16 19:00:33 INFO  AccountService:36 - Finding User with the username f
+2020-08-16 19:00:34 INFO  AccountService:36 - Finding User with the username f
+2020-08-16 19:00:41 INFO  AccountService:36 - Finding User with the username d
+2020-08-16 19:00:42 INFO  AccountService:36 - Finding User with the username d
+2020-08-16 19:08:55 INFO  Driver:14 - The application has started
+2020-08-16 19:08:59 INFO  AccountService:36 - Finding User with the username d
+2020-08-16 19:09:00 INFO  AccountService:36 - Finding User with the username d
+2020-08-16 19:09:11 INFO  AccountService:36 - Finding User with the username Kanye.West
+2020-08-16 19:09:11 INFO  AccountService:36 - Finding User with the username Kanye.West
+2020-08-16 19:09:12 INFO  Driver:105 - Kanye West logged in as Customer.
+2020-08-16 19:14:54 INFO  Driver:14 - The application has started
+2020-08-16 19:14:57 INFO  AccountService:53 - Finding User with the username f
+2020-08-16 19:16:11 INFO  Driver:14 - The application has started
+2020-08-16 19:16:14 INFO  AccountService:53 - Finding User with the username fd
+2020-08-16 19:16:27 INFO  AccountService:53 - Finding User with the username Kanye.West
+2020-08-16 19:16:28 INFO  AccountService:41 - Log in attempt failed. Username and password do not match.
+2020-08-16 19:17:59 INFO  AccountService:53 - Finding User with the username Kanye.West
+2020-08-16 19:17:59 INFO  AccountService:29 - Kanye West logged in as Customer.
+2020-08-16 19:18:02 INFO  AccountService:23 - Finding Account(s) by owner.
+2020-08-17 00:50:54 INFO  Driver:14 - The application has started
+2020-08-17 00:51:06 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 00:51:07 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 00:55:16 INFO  Driver:14 - The application has started
+2020-08-17 00:55:22 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 00:55:22 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 00:58:54 INFO  Driver:14 - The application has started
+2020-08-17 00:59:02 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 00:59:03 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 00:59:38 INFO  AccountService:56 - Finding User with the username Kim.Kard
+2020-08-17 00:59:38 INFO  AccountService:64 - New customer successfully registered!
+2020-08-17 00:59:45 INFO  AccountService:93 - New account inserted
+2020-08-17 01:03:20 INFO  Driver:14 - The application has started
+2020-08-17 01:03:27 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:03:28 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:03:56 INFO  AccountService:56 - Finding User with the username Kim.Kard
+2020-08-17 01:03:56 INFO  AccountService:73 - Registration failed. Username is unavailable.
+2020-08-17 01:04:24 INFO  AccountService:93 - New account inserted
+2020-08-17 01:09:30 INFO  Driver:14 - The application has started
+2020-08-17 01:09:40 INFO  AccountService:56 - Finding User with the username Kim.Kard
+2020-08-17 01:09:41 INFO  AccountService:31 - Kim Kardashian logged in as Customer.
+2020-08-17 01:09:44 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:23:58 INFO  Driver:14 - The application has started
+2020-08-17 01:24:04 INFO  AccountService:56 - Finding User with the username Kim.Kard
+2020-08-17 01:24:05 INFO  AccountService:31 - Kim Kardashian logged in as Customer.
+2020-08-17 01:24:08 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:26:18 INFO  Driver:14 - The application has started
+2020-08-17 01:26:25 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:26:26 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:26:27 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:29:23 INFO  Driver:14 - The application has started
+2020-08-17 01:29:28 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:29:29 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:29:32 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:46:10 INFO  Driver:14 - The application has started
+2020-08-17 01:46:15 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:46:16 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:46:17 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:46:56 INFO  Driver:14 - The application has started
+2020-08-17 01:47:02 INFO  AccountService:56 - Finding User with the username Lily.Li
+2020-08-17 01:47:03 INFO  AccountService:34 - Lily Li logged in as Employee.
+2020-08-17 01:47:05 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 01:47:23 INFO  AccountService:85 - Account(s) have been successfully approved
+2020-08-17 01:47:23 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 01:47:42 INFO  Driver:14 - The application has started
+2020-08-17 01:47:48 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:47:48 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:47:50 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:50:43 INFO  Driver:14 - The application has started
+2020-08-17 01:50:49 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:50:50 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:50:51 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:53:44 INFO  Driver:14 - The application has started
+2020-08-17 01:53:48 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 01:53:49 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 01:53:50 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:53:57 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 01:54:00 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:54:17 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:56:40 INFO  Driver:14 - The application has started
+2020-08-17 01:56:51 INFO  AccountService:56 - Finding User with the username Kim.Kard
+2020-08-17 01:56:52 INFO  AccountService:31 - Kim Kardashian logged in as Customer.
+2020-08-17 01:56:53 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 01:59:52 INFO  Driver:14 - The application has started
+2020-08-17 01:59:57 INFO  AccountService:56 - Finding User with the username Kim.Kard
+2020-08-17 01:59:58 INFO  AccountService:31 - Kim Kardashian logged in as Customer.
+2020-08-17 01:59:59 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 02:00:23 INFO  AccountService:85 - Finding User: West, Kanye
+2020-08-17 02:00:26 INFO  AccountService:93 - New account inserted
+2020-08-17 02:27:29 INFO  Driver:14 - The application has started
+2020-08-17 02:27:37 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 02:27:38 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 02:27:59 INFO  AccountService:93 - New account inserted
+2020-08-17 02:37:34 INFO  Driver:14 - The application has started
+2020-08-17 02:37:51 INFO  AccountService:56 - Finding User with the username Kanye.West
+2020-08-17 02:37:52 INFO  AccountService:31 - Kanye West logged in as Customer.
+2020-08-17 02:37:58 INFO  AccountService:93 - New account inserted
+2020-08-17 02:47:57 INFO  Driver:14 - The application has started
+2020-08-17 02:48:04 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 02:48:05 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 02:48:10 INFO  AccountService:93 - Inserting new account
+2020-08-17 02:49:42 INFO  Driver:14 - The application has started
+2020-08-17 02:50:00 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 02:50:01 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 02:50:06 INFO  AccountService:93 - Inserting new account
+2020-08-17 02:51:41 INFO  Driver:14 - The application has started
+2020-08-17 02:51:47 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 02:51:48 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 02:51:52 INFO  AccountService:93 - Inserting new account
+2020-08-17 02:51:52 INFO  AccountService:149 - Updating account ownership
+2020-08-17 02:58:13 INFO  Driver:14 - The application has started
+2020-08-17 02:58:21 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 02:58:21 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 02:58:29 INFO  AccountService:93 - Inserting new account
+2020-08-17 02:58:29 INFO  AccountService:149 - Updating account ownership
+2020-08-17 02:59:18 INFO  Driver:14 - The application has started
+2020-08-17 02:59:25 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 02:59:26 INFO  AccountService:44 - Log in attempt failed. Username and password do not match.
+2020-08-17 02:59:33 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 02:59:34 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 02:59:43 INFO  AccountService:93 - Inserting new account
+2020-08-17 02:59:43 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:02:10 INFO  Driver:20 - The application has started
+2020-08-17 03:02:50 INFO  Driver:20 - The application has started
+2020-08-17 03:03:51 INFO  Driver:20 - The application has started
+2020-08-17 03:05:11 INFO  Driver:14 - The application has started
+2020-08-17 03:05:17 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:05:45 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:05:48 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 03:05:55 INFO  AccountService:93 - Inserting new account
+2020-08-17 03:05:58 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:06:21 INFO  AccountService:86 - Finding User: Kardashian, Kim
+2020-08-17 03:06:26 INFO  AccountService:93 - Inserting new account
+2020-08-17 03:06:26 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:11:57 INFO  Driver:14 - The application has started
+2020-08-17 03:12:04 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:12:05 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 03:12:17 INFO  AccountService:86 - Finding User: Kardashian, Kim
+2020-08-17 03:12:19 INFO  AccountService:93 - Inserting new account
+2020-08-17 03:12:19 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:14:01 INFO  Driver:14 - The application has started
+2020-08-17 03:14:08 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:14:09 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 03:14:31 INFO  AccountService:86 - Finding User: Kardashian, Kim
+2020-08-17 03:18:42 INFO  Driver:14 - The application has started
+2020-08-17 03:18:59 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:19:00 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 03:19:14 INFO  AccountService:86 - Finding User: Kardashian, Kim
+2020-08-17 03:19:16 INFO  AccountService:93 - Inserting new account
+2020-08-17 03:19:16 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:24:56 INFO  Driver:14 - The application has started
+2020-08-17 03:25:02 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:25:03 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 03:25:17 INFO  AccountService:86 - Finding User: Kardashian, Kim
+2020-08-17 03:25:19 INFO  AccountService:93 - Inserting new account
+2020-08-17 03:25:19 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:28:56 INFO  Driver:14 - The application has started
+2020-08-17 03:29:04 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 03:29:05 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 03:29:16 INFO  AccountService:86 - Finding User: Kardashian, Kim
+2020-08-17 03:29:17 INFO  AccountService:93 - Inserting new account
+2020-08-17 03:29:18 INFO  AccountService:149 - Updating account ownership
+2020-08-17 03:29:41 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 03:30:41 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 03:31:11 INFO  Driver:14 - The application has started
+2020-08-17 03:31:24 INFO  AccountService:57 - Finding User with the username Lily.Li
+2020-08-17 03:31:25 INFO  AccountService:35 - Lily Li logged in as Employee.
+2020-08-17 03:31:47 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 03:32:00 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 03:36:04 INFO  Driver:15 - The application has started
+2020-08-17 11:25:55 INFO  Driver:14 - The application has started
+2020-08-17 11:26:17 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 11:26:18 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 11:26:19 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 11:26:49 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 11:29:51 INFO  Driver:14 - The application has started
+2020-08-17 11:29:57 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 11:29:58 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 11:30:19 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 11:30:30 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 12:21:45 INFO  Driver:14 - The application has started
+2020-08-17 12:21:51 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 12:21:52 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 12:21:54 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 12:22:14 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 12:25:31 INFO  Driver:14 - The application has started
+2020-08-17 12:50:17 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 12:50:18 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 12:50:33 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 12:51:03 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 12:52:51 INFO  Driver:14 - The application has started
+2020-08-17 12:53:06 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 12:53:07 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 12:53:12 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 12:53:21 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 12:53:59 INFO  Driver:14 - The application has started
+2020-08-17 12:54:06 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 12:54:07 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 12:54:08 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 12:54:17 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 13:04:19 INFO  Driver:14 - The application has started
+2020-08-17 13:04:24 INFO  AccountService:57 - Finding User with the username Kanye West
+2020-08-17 13:04:33 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 13:04:33 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 13:04:36 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:04:45 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 13:08:14 INFO  Driver:14 - The application has started
+2020-08-17 13:08:22 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 13:08:22 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 13:08:26 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:08:37 INFO  AccountService:19 - Finding Account with account number 100000016
+2020-08-17 13:08:46 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:08:59 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:09:16 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:09:32 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:13:21 INFO  Driver:14 - The application has started
+2020-08-17 13:13:29 INFO  AccountService:57 - Finding User with the username Kanye.West
+2020-08-17 13:13:30 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 13:13:31 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:13:41 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 13:13:50 INFO  AccountService:100 - Account updated
+2020-08-17 13:13:51 INFO  AccountService:138 - Deposited $300.33 from Account *****0000
+2020-08-17 13:18:17 INFO  Driver:14 - The application has started
+2020-08-17 13:18:37 INFO  AccountService:57 - Finding User with the username Lily.Li
+2020-08-17 13:18:38 INFO  AccountService:35 - Lily Li logged in as Employee.
+2020-08-17 13:18:42 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 13:19:11 INFO  AccountService:60 - Account(s) have been successfully approved
+2020-08-17 13:19:11 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 13:19:27 INFO  AccountService:85 - Account(s) have been successfully approved
+2020-08-17 13:19:27 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 13:20:34 INFO  AccountService:45 - Account(s) have been successfully denied
+2020-08-17 13:20:42 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 13:20:56 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:21:12 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 13:21:49 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 13:24:52 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 13:27:30 INFO  AccountService:86 - Finding User: West, Kanye
+2020-08-17 13:28:25 INFO  Driver:14 - The application has started
+2020-08-17 13:33:35 INFO  Driver:14 - The application has started
+2020-08-17 13:33:50 INFO  Driver:14 - The application has started
+2020-08-17 13:34:28 INFO  Driver:14 - The application has started
+2020-08-17 13:34:40 INFO  AccountService:61 - Finding User with the username Kanye.West
+2020-08-17 13:34:40 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 13:34:45 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 14:07:41 INFO  Driver:14 - The application has started
+2020-08-17 14:09:22 INFO  AccountService:61 - Finding User with the username Jane.Huang
+2020-08-17 14:09:23 INFO  AccountService:74 - Registration failed. Passwords must have at least 6 characters.
+2020-08-17 14:09:39 INFO  AccountService:61 - Finding User with the username e
+2020-08-17 14:10:06 INFO  AccountService:61 - Finding User with the username username
+2020-08-17 14:10:06 INFO  AccountService:69 - New customer successfully registered!
+2020-08-17 14:10:13 INFO  AccountService:61 - Finding User with the username username
+2020-08-17 14:10:13 INFO  AccountService:32 - User User logged in as Customer.
+2020-08-17 14:14:19 INFO  AccountService:85 - Updating User: User [username=username, password=123456, firstName=User, lastName=User, dOB=1990-12-20, userType=1]
+2020-08-17 14:14:25 INFO  AccountService:61 - Finding User with the username username
+2020-08-17 14:14:25 INFO  AccountService:32 - User User logged in as Customer.
+2020-08-17 14:15:38 INFO  AccountService:61 - Finding User with the username John.Smith
+2020-08-17 14:15:38 INFO  AccountService:69 - New customer successfully registered!
+2020-08-17 14:15:48 INFO  AccountService:93 - Inserting new account
+2020-08-17 14:15:49 INFO  AccountService:152 - Updating account ownership
+2020-08-17 14:16:15 INFO  AccountService:56 - Logging out.
+2020-08-17 14:16:29 INFO  Driver:14 - The application has started
+2020-08-17 14:24:44 INFO  AccountService:61 - Finding User with the username e1
+2020-08-17 14:24:45 INFO  AccountService:35 - Lily Li logged in as Employee.
+2020-08-17 14:24:48 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 14:26:19 INFO  AccountService:90 - Finding User: User, User
+2020-08-17 14:26:37 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 14:26:41 INFO  AccountService:56 - Logging out.
+2020-08-17 14:26:49 INFO  Driver:14 - The application has started
+2020-08-17 14:28:12 INFO  AccountService:61 - Finding User with the username 1
+2020-08-17 14:28:23 INFO  AccountService:61 - Finding User with the username Harry.Potter
+2020-08-17 14:28:33 INFO  AccountService:61 - Finding User with the username a1
+2020-08-17 14:28:33 INFO  AccountService:38 - Harry Potter logged in as Admin.
+2020-08-17 14:29:27 INFO  AccountService:30 - Displaying all pending Account(s).
+2020-08-17 14:29:41 INFO  AccountService:45 - Account(s) have been successfully approved
+2020-08-17 14:29:49 INFO  AccountService:19 - Finding Account with account number 100000017
+2020-08-17 14:46:16 INFO  Driver:14 - The application has started
+2020-08-17 14:46:22 INFO  AccountService:61 - Finding User with the username a1
+2020-08-17 14:46:22 INFO  AccountService:38 - Harry Potter logged in as Admin.
+2020-08-17 14:46:30 INFO  AccountService:19 - Finding Account with account number 100000017
+2020-08-17 14:46:35 INFO  AccountService:100 - Account updated
+2020-08-17 14:46:35 INFO  AccountService:140 - Deposited $300.33 into Savings Account *****0017
+2020-08-17 14:47:34 INFO  AccountService:100 - Account updated
+2020-08-17 14:47:35 INFO  AccountService:127 - Withdrew $100.0 from  Savings Account *****0017
+2020-08-17 14:57:06 INFO  Driver:14 - The application has started
+2020-08-17 14:57:12 INFO  AccountService:61 - Finding User with the username a1
+2020-08-17 14:57:13 INFO  AccountService:38 - Harry Potter logged in as Admin.
+2020-08-17 14:57:22 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 14:57:30 INFO  AccountService:100 - Account updated
+2020-08-17 14:57:30 INFO  AccountService:140 - Deposited $500.0 into Savings Account *****0000
+2020-08-17 14:59:48 INFO  Driver:14 - The application has started
+2020-08-17 14:59:57 INFO  AccountService:61 - Finding User with the username a1
+2020-08-17 14:59:58 INFO  AccountService:38 - Harry Potter logged in as Admin.
+2020-08-17 15:00:05 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 15:00:13 INFO  AccountService:100 - Account updated
+2020-08-17 15:00:14 INFO  AccountService:140 - Deposited $555.0 into Savings Account *****0000
+2020-08-17 15:09:14 INFO  AccountService:19 - Finding Account with account number 100000016
+2020-08-17 15:09:15 INFO  AccountService:100 - Account updated
+2020-08-17 15:09:15 INFO  AccountService:100 - Account updated
+2020-08-17 15:09:15 INFO  AccountService:112 - Transfered $355.0 from Account *****0000
+to Account *****0016
+2020-08-17 15:17:38 INFO  Driver:14 - The application has started
+2020-08-17 15:17:44 INFO  AccountService:61 - Finding User with the username a1
+2020-08-17 15:17:45 INFO  AccountService:38 - Harry Potter logged in as Admin.
+2020-08-17 15:18:12 INFO  AccountService:19 - Finding Account with account number 100000000
+2020-08-17 15:18:39 INFO  AccountService:19 - Finding Account with account number 100000017
+2020-08-17 15:18:53 INFO  AccountService:19 - Finding Account with account number 100000017
+2020-08-17 15:18:55 INFO  AccountService:100 - Account updated

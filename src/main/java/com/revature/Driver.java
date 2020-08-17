@@ -18,6 +18,13 @@ public class Driver {
 		ConsoleUtil cons = new ConsoleUtil();
 		cons.beginApp();
 		
+//		List<String> list = new ArrayList<String>();
+//		list.add("1");
+//		list.add("1");
+//		list.add("1");
+//		System.out.println(String.join(", ", list));
+		
+		
 //		AccountService as = new AccountService();
 //		List<Account> l1 = as.findByAccOwner("Kanye.West");
 //		List<Account> l2 = as.viewPending();
@@ -42,7 +49,7 @@ public class Driver {
 //		IAccountDAO dao = new AccountDAO();
 //		Account a = dao.findByAccNum(100000000);
 //		System.out.println(a);
-		
+
 	}
 
 }
