@@ -1,61 +1,80 @@
+import static org.junit.Assert.assertTrue;
 
+import java.util.Arrays;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 import com.revature.models.Account;
+import com.revature.services.AccountService;
+
 
 public class AccountTest {
-		
-		public static Account acc;
-		double balance;
-		double amtToDeposit;
-		double amtToWithdraw;
-		
-		@BeforeClass
-		public static void makeAccount() {
-			System.out.println("In BeforeClass");
-			acc = new Account("Alice", "123456789", "11111111", 500.00);
-		}
-		
-		@Before
-		public void showMenu() {
-			System.out.println("In Before");
-			double amtToDeposit = 100.00;
-			double amtToWithdraw = 50.00;
-		}
-		
-		@After
-		public void clearResult() {
-			System.out.println("In After");
-			balance = 500.00;
-		}
-		
-		@AfterClass
-		public static void clearMO() {
-			System.out.println("In AfterClass");
-			acc = null;
-		}
-		
-		@Test
-		public void testShowBalance() {
-			System.out.println("Testing show balance");
-			balance = acc.getBalance();
-		}	
-		
-		@Test
-		public void testDeposit() {
-			System.out.println("Testing deposit");
-			balance = acc.deposit(amtToDeposit);
-			assertTrue(balance == 600.00);
-		}
-		
-		@Test
-		public void testWithdraw() {
-			System.out.println("Testing withdraw");
-			balance = acc.withdraw(amtToWithdraw);
-			assertTrue(balance == 450.00);
-		}
-		
+
+	public static AccountService as;
+	public static Account a;
+	public static Account a2;
+	double amtD;
+	double amtW;
+	double negative;
+	double overdrawn;
+	static double result;
+	static double[] resultT;
+
+	@BeforeClass
+	public static void makeServices() {
+		System.out.println("In BeforeClass");
+		as = new AccountService();
 		
 	}
 
+	@Before
+	public void setAmts() {
+		System.out.println("In Before");
+		a = new Account(111111111, "Checking", null, 100.00, "approved");
+		a2 = new Account(222222222, "Savings", null, 100.00, "approved");
+		amtD = 100.00;
+		amtW = 50.00;
+	}
+
+	@After
+	public void clearResult() {
+		System.out.println("In After");
+		result = 0;
+		resultT = null;
+	}
+
+	@AfterClass
+	public static void clearMO() {
+		System.out.println("In AfterClass");
+		as = null;
+		a = null;
+
+	}
+
+	@Test
+	public void testDeposit() {
+		System.out.println("Testing deposit");
+		result = as.deposit(a, amtD);
+		assertTrue(result == 200.00);
+	}
+
+	@Test
+	public void testWithdraw() {
+		System.out.println("Testing withdraw");
+		result = as.withdraw(a, amtW);
+		assertTrue(result == 50.00);
+	}
 	
+	@Test
+	public void testTransfer() {
+		System.out.println("Testing withdraw");
+		resultT = as.transferMoney(a, a2, amtW);
+		double[] expectedOutput = {50.00, 150.00};
+		assertTrue(Arrays.equals(expectedOutput, resultT));
+	}
+
 }

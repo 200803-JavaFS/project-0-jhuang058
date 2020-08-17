@@ -307,3 +307,91 @@ to Account *****0016
 2020-08-17 15:18:39 INFO  AccountService:19 - Finding Account with account number 100000017
 2020-08-17 15:18:53 INFO  AccountService:19 - Finding Account with account number 100000017
 2020-08-17 15:18:55 INFO  AccountService:100 - Account updated
+2020-08-17 16:23:10 INFO  AccountService:100 - Account updated
+2020-08-17 16:23:11 INFO  AccountService:100 - Account updated
+2020-08-17 16:24:19 INFO  AccountService:100 - Account updated
+2020-08-17 16:24:19 INFO  AccountService:100 - Account updated
+2020-08-17 16:25:29 INFO  AccountService:100 - Account updated
+2020-08-17 16:25:30 INFO  AccountService:100 - Account updated
+2020-08-17 16:26:08 INFO  AccountService:100 - Account updated
+2020-08-17 16:26:09 INFO  AccountService:100 - Account updated
+2020-08-17 16:37:29 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:37:29 INFO  AccountService:102 - Account updated
+2020-08-17 16:37:29 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:37:29 INFO  AccountService:102 - Account updated
+2020-08-17 16:40:33 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:40:33 INFO  AccountService:102 - Account updated
+2020-08-17 16:40:34 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:40:34 INFO  AccountService:102 - Account updated
+2020-08-17 16:43:03 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:43:03 INFO  AccountService:102 - Account updated
+2020-08-17 16:43:04 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:43:04 INFO  AccountService:102 - Account updated
+2020-08-17 16:43:52 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:43:52 INFO  AccountService:102 - Account updated
+2020-08-17 16:43:53 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:43:53 INFO  AccountService:102 - Account updated
+2020-08-17 16:44:23 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:44:23 INFO  AccountService:102 - Account updated
+2020-08-17 16:44:24 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:44:24 INFO  AccountService:102 - Account updated
+2020-08-17 16:46:46 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:46:46 INFO  AccountService:102 - Account updated
+2020-08-17 16:46:47 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:46:47 INFO  AccountService:102 - Account updated
+2020-08-17 16:50:37 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:50:37 INFO  AccountService:102 - Account updated
+2020-08-17 16:50:38 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:50:38 INFO  AccountService:102 - Account updated
+2020-08-17 16:50:38 INFO  AccountService:109 - Initiating a transfer of funds
+2020-08-17 16:50:38 INFO  AccountService:102 - Account updated
+2020-08-17 16:50:39 INFO  AccountService:102 - Account updated
+2020-08-17 16:52:36 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:52:36 INFO  AccountService:102 - Account updated
+2020-08-17 16:52:38 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:52:38 INFO  AccountService:102 - Account updated
+2020-08-17 16:52:38 INFO  AccountService:109 - Initiating a transfer of funds
+2020-08-17 16:52:38 INFO  AccountService:102 - Account updated
+2020-08-17 16:52:38 INFO  AccountService:102 - Account updated
+2020-08-17 16:57:45 INFO  AccountService:127 - Initiating a withdrawal
+2020-08-17 16:57:45 INFO  AccountService:102 - Account updated
+2020-08-17 16:57:46 INFO  AccountService:141 - Initiating a deposit
+2020-08-17 16:57:46 INFO  AccountService:102 - Account updated
+2020-08-17 17:00:46 INFO  AccountService:109 - Initiating a transfer of funds
+2020-08-17 17:00:46 INFO  AccountService:102 - Account updated
+2020-08-17 17:00:47 INFO  AccountService:102 - Account updated
+2020-08-17 17:21:16 INFO  AccountService:134 - Initiating a withdrawal
+2020-08-17 17:21:16 INFO  AccountService:102 - Account updated
+2020-08-17 17:21:17 INFO  AccountService:153 - Initiating a deposit
+2020-08-17 17:21:17 INFO  AccountService:102 - Account updated
+2020-08-17 17:21:17 INFO  AccountService:109 - Initiating a transfer of funds
+2020-08-17 17:21:17 INFO  AccountService:102 - Account updated
+2020-08-17 17:21:18 INFO  AccountService:102 - Account updated
+2020-08-17 17:21:39 INFO  Driver:14 - The application has started
+2020-08-17 17:29:30 INFO  AccountService:61 - Finding User with the username Kanye.West
+2020-08-17 17:29:31 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 17:29:34 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 17:29:47 INFO  AccountService:19 - Finding Account from database
+2020-08-17 17:30:00 INFO  AccountService:153 - Initiating a deposit
+2020-08-17 17:31:29 INFO  AccountService:19 - Finding Account from database
+2020-08-17 17:31:29 INFO  AccountService:109 - Initiating a transfer of funds
+2020-08-17 17:31:49 INFO  AccountService:153 - Initiating a deposit
+2020-08-17 17:31:49 INFO  AccountService:102 - Account updated
+2020-08-17 17:31:59 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 17:32:19 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 17:35:17 INFO  Driver:14 - The application has started
+2020-08-17 17:35:25 INFO  AccountService:61 - Finding User with the username Kanye.West
+2020-08-17 17:35:26 INFO  AccountService:32 - Kanye West logged in as Customer.
+2020-08-17 17:35:50 INFO  AccountService:90 - Finding User: User, User
+2020-08-17 17:35:52 INFO  AccountService:95 - Inserting new account
+2020-08-17 17:35:52 INFO  AccountService:178 - Updating account ownership
+2020-08-17 17:36:01 INFO  AccountService:24 - Finding Account(s) by owner.
+2020-08-17 17:36:39 INFO  AccountService:19 - Finding Account from database
+2020-08-17 17:46:04 INFO  Driver:14 - The application has started
+2020-08-17 17:46:45 INFO  AccountService:61 - Finding User with the username username
+2020-08-17 17:46:46 INFO  AccountService:32 - User User logged in as Customer.
+2020-08-17 17:47:11 INFO  AccountService:90 - Finding User: Smith, John
+2020-08-17 17:47:12 INFO  AccountService:97 - Inserting new account
+2020-08-17 17:47:12 INFO  AccountService:180 - Updating account ownership
+2020-08-17 17:47:29 INFO  AccountService:26 - Finding Account(s) by owner.
+2020-08-17 17:47:58 INFO  AccountService:21 - Finding Account from database

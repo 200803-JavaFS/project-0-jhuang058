@@ -433,7 +433,9 @@ public class ConsoleUtil {
 
 		if (as.insertAccount(a, owners)) {
 			as.insertOwnership(owners);
-			System.out.println("Thanking you for opening a new " + type + " Account. \n"
+			int newAccNum = as.pullNewAccNum(user, owners);
+			System.out.println("Thanking you for opening a new " + type + " Account. "
+					+ "Your new bank account number is: "+newAccNum +"\n"
 					+ "Please allow up to 24 hours for your account to be approved.");
 			System.out.println("================================================");
 			System.out.println("Enter 'P' to return to the previous menu, \n" + "'E' to exit.");
@@ -535,8 +537,11 @@ public class ConsoleUtil {
 			System.out.println("Account does not exist / You do not have access to that account.");
 			manageAccount(user);
 		}
-
 		
+		break;
+	case "E":
+		exitMessage();
+		us.logout();
 		break;
 	default:
 		System.out.println("Please enter a valid option.");
@@ -581,10 +586,11 @@ public class ConsoleUtil {
 			System.out.println("How much would you like to deposit?");
 			double amt = scan.nextDouble();
 			scan.nextLine();
-
-			if (amt > 0) {
-				as.deposit(a1, amt);
-
+			
+			
+			if (as.deposit(a1, amt) == -1) {
+				accountTransactionMenu(a1, user);
+			} else {
 				System.out.println("================================================");
 				System.out.println("Enter 'P' to return to the previous menu, \n" + "'E' to exit.");
 				String o2 = scan.nextLine().toUpperCase();
@@ -596,9 +602,6 @@ public class ConsoleUtil {
 					us.logout();
 					break;
 				}
-			} else {
-				System.out.println("Error. Please try again.");
-				accountTransactionMenu(a1, user);
 			}
 			break;
 		case "2": // withdraw
@@ -606,9 +609,10 @@ public class ConsoleUtil {
 			double amtW = scan.nextDouble();
 			scan.nextLine();
 
-			if (amtW <= b && amtW > 0) {
-				as.withdraw(a1, amtW);
+			if (as.withdraw(a1, amtW) == -1) {
+				accountTransactionMenu(a1, user);
 
+			} else {
 				System.out.println("================================================");
 				System.out.println("Enter 'P' to return to the previous menu, \n" + "'E' to exit.");
 				String o3 = scan.nextLine().toUpperCase();
@@ -620,9 +624,6 @@ public class ConsoleUtil {
 					us.logout();
 					break;
 				}
-			} else {
-				System.out.println("Error. Please try again.");
-				accountTransactionMenu(a1, user);
 			}
 
 			break;
@@ -630,34 +631,26 @@ public class ConsoleUtil {
 			System.out.println("How much would you like to transfer?");
 			double amtT = scan.nextDouble();
 			scan.nextLine();
-
-			if (amtT <= b && amtT > 0) {
-				System.out.println("Enter the account number for the destination account");
-				int accTo = scan.nextInt();
-				scan.nextLine();
-				Account a2 = as.findByAccNum(accTo);
-				if (a2 != null && a2.getAccountStatus().toLowerCase().equals("approved")) {
-
-					as.transferMoney(a1, a2, amtT);
-
-					System.out.println("================================================");
-					System.out.println("Enter 'P' to return to the previous menu, \n" + "'E' to exit.");
-					String o4 = scan.nextLine().toUpperCase();
-					switch (o4) {
-					case "P":
-						accountTransactionMenu(a1, user);
-					case "E":
-						exitMessage();
-						us.logout();
-						break;
-					}
-				} else {
-					System.out.println("Error. Please try again.");
-					accountTransactionMenu(a1, user);
-				}
-			} else {
-				System.out.println("Error. Please try again.");
+			System.out.println("Enter the account number for the destination account");
+			int accTo = scan.nextInt();
+			scan.nextLine();
+			Account a2 = as.findByAccNum(accTo);
+			
+			if (as.transferMoney(a1, a2, amtT) == null) {
 				accountTransactionMenu(a1, user);
+
+			} else {
+				System.out.println("================================================");
+				System.out.println("Enter 'P' to return to the previous menu, \n" + "'E' to exit.");
+				String o4 = scan.nextLine().toUpperCase();
+				switch (o4) {
+				case "P":
+					accountTransactionMenu(a1, user);
+				case "E":
+					exitMessage();
+					us.logout();
+					break;
+				}
 			}
 			break;
 		case "P":
