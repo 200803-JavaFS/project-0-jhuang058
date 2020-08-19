@@ -1,11 +1,9 @@
 package com.revature.utils;
 
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.revature.Driver;
 import com.revature.models.Account;
 import com.revature.models.User;
 import com.revature.services.AccountService;
@@ -56,7 +54,7 @@ public class ConsoleUtil {
 			break;
 		case "E":
 			exitMessage();
-			us.logout();
+			beginApp();
 			break;
 		default:
 			System.out.println("Please select a valid option from the menu.");
@@ -120,6 +118,7 @@ public class ConsoleUtil {
 		case "E":
 			exitMessage();
 			us.logout();
+			beginApp();
 			break;
 		default:
 			System.out.println("Option invalid.");
@@ -129,7 +128,7 @@ public class ConsoleUtil {
 
 	private void employeeMenu(User user) {
 		System.out.println("Please select an option from the list: \n" + "1. View pending account applications \n"
-				+ "2. View account information \n" + "3. View account balances \n" + "4. View customer information \n"
+				+ "2. View customer accounts \n" + "3. View account balances \n" + "4. View customer information \n"
 				+ "E. Exit");
 		String option = scan.nextLine().toUpperCase();
 		switch (option) {
@@ -148,6 +147,7 @@ public class ConsoleUtil {
 		case "E":
 			System.out.println("'Til next time!");
 			us.logout();
+			beginApp();
 			break;
 		default:
 			System.out.println("Invalid option. Please select an option from the menu.");
@@ -158,16 +158,28 @@ public class ConsoleUtil {
 
 	private void adminMenu(User user) {
 		System.out.println("Please select an option from the list: \n" + "1. View account applications \n"
-				+ "2. Manage account(s) \n" + "3. Cancel account(s) \n" + "E. Exit");
+				+ "2. View customer accounts \n"
+				+ "3. View account balances \n"
+				+ "4. View customer information \n"
+				+ "5. Manage account(s) \n" + "6. Cancel account(s) \n" + "E. Exit");
 		String option2 = scan.nextLine().toUpperCase();
 		switch (option2) {
 		case "1":
 			viewPendingAppsA(user);
 			break;
-		case "2": // manage accounts
+		case "2": //view customer accounts
+			showAccountsE(user);
+			break;
+		case "3":
+			viewBalanceE(user);
+			break;
+		case "4":
+			viewCustomerInfo(user);
+			break;
+		case "5": // manage accounts
 			manageAccountA(user);
 			break;
-		case "3": // manage accounts
+		case "6": // manage accounts
 			System.out.println("Please enter the account number for the account you would like to access.");
 			int i = scan.nextInt();
 			scan.nextLine();
@@ -187,15 +199,15 @@ public class ConsoleUtil {
 				} else {
 					adminMenu(user);
 				}
-				break;
 			} else {
 				System.out.println("Account number not found. Please try again.");
 				adminMenu(user);
 			}
-
+			break;
 		case "E":
 			System.out.println("Adios. We shall meet again!");
 			us.logout();
+			beginApp();
 			break;
 		default:
 			System.out.println("Invalid option. Please select an option from the menu.");
@@ -219,11 +231,20 @@ public class ConsoleUtil {
 		String o = scan.nextLine().toUpperCase();
 		switch (o) {
 		case "P":
-			employeeMenu(user);
+			if (user.getUserType() == 2) {
+				employeeMenu(user);
+			}else {
+				adminMenu(user);
+			}
 			break;
 		case "E":
 			System.out.println("Ciao!");
 			us.logout();
+			beginApp();
+			break;
+		default:
+			System.out.println("Please enter a valid option.");
+			viewCustomerInfo(user);
 			break;
 		}
 	}
@@ -253,11 +274,20 @@ public class ConsoleUtil {
 			String o = scan.nextLine().toUpperCase();
 			switch (o) {
 			case "P":
-				employeeMenu(user);
+				if (user.getUserType() == 2) {
+					employeeMenu(user);
+				}else {
+					adminMenu(user);
+				}
 				break;
 			case "E":
 				System.out.println("Ciao. 'Til next time!");
 				us.logout();
+				beginApp();
+				break;
+			default:
+				System.out.println("Please enter a valid option.");
+				viewBalanceE(user);
 				break;
 			}
 		} else {
@@ -282,11 +312,20 @@ public class ConsoleUtil {
 			String o = scan.nextLine().toUpperCase();
 			switch (o) {
 			case "P":
-				employeeMenu(user);
+				if (user.getUserType() == 2) {
+					employeeMenu(user);
+				} else {
+					adminMenu(user);
+				}
 				break;
 			case "E":
 				System.out.println("Ciao!");
 				us.logout();
+				beginApp();
+				break;
+			default:
+				System.out.println("Please enter a valid option.");
+				showAccountsE(user);
 				break;
 			}
 		} else {
@@ -362,6 +401,7 @@ public class ConsoleUtil {
 		case "E":
 			exitMessage();
 			us.logout();
+			beginApp();
 			break;
 		default:
 			System.out.println("Option invalid. Please try again.");
@@ -404,6 +444,8 @@ public class ConsoleUtil {
 			} else {
 				createAccountOwnership(user);
 			}
+		} else {
+			createAccount(user, owners);
 		}
 	}
 
@@ -447,6 +489,11 @@ public class ConsoleUtil {
 			case "E":
 				exitMessage();
 				us.logout();
+				beginApp();
+				break;
+			default:
+				System.out.println("Please enter a valid option.");
+				createAccount(user, owners);
 				break;
 			}
 		} else {
@@ -473,6 +520,7 @@ public class ConsoleUtil {
 		System.out.println("1. View Account Info");
 		System.out.println("2. View Account Balance in All Accounts");
 		System.out.println("3. Deposit, Withdraw, or Transfer Funds");
+		System.out.println("P. Return to previous menu");
 		System.out.println("E. Exit");
 		String option = scan.nextLine().toUpperCase();
 		
@@ -488,6 +536,11 @@ public class ConsoleUtil {
 		case "E":
 			exitMessage();
 			us.logout();
+			beginApp();
+			break;
+		default:
+			System.out.println("Please enter a valid option.");
+			manageAccount(user);
 			break;
 		}
 		break;
@@ -508,6 +561,11 @@ public class ConsoleUtil {
 			case "E":
 				exitMessage();
 				us.logout();
+				beginApp();
+				break;
+			default:
+				System.out.println("Please enter a valid option.");
+				manageAccount(user);
 				break;
 			}
 		} else {
@@ -539,9 +597,13 @@ public class ConsoleUtil {
 		}
 		
 		break;
+	case "P":
+		customerMenu(user);
+		break;
 	case "E":
 		exitMessage();
 		us.logout();
+		beginApp();
 		break;
 	default:
 		System.out.println("Please enter a valid option.");
@@ -597,9 +659,15 @@ public class ConsoleUtil {
 				switch (o2) {
 				case "P":
 					accountTransactionMenu(a1, user);
+					break;
 				case "E":
 					exitMessage();
 					us.logout();
+					beginApp();
+					break;
+				default:
+					System.out.println("Please enter a valid option.");
+					accountTransactionMenu(a1, user);
 					break;
 				}
 			}
@@ -619,9 +687,15 @@ public class ConsoleUtil {
 				switch (o3) {
 				case "P":
 					accountTransactionMenu(a1, user);
+					break;
 				case "E":
 					exitMessage();
 					us.logout();
+					beginApp();
+					break;
+				default:
+					System.out.println("Please enter a valid option.");
+					accountTransactionMenu(a1, user);
 					break;
 				}
 			}
@@ -646,9 +720,15 @@ public class ConsoleUtil {
 				switch (o4) {
 				case "P":
 					accountTransactionMenu(a1, user);
+					break;
 				case "E":
 					exitMessage();
 					us.logout();
+					beginApp();
+					break;
+				default:
+					System.out.println("Please enter a valid option.");
+					accountTransactionMenu(a1, user);
 					break;
 				}
 			}
@@ -663,6 +743,7 @@ public class ConsoleUtil {
 		case "E":
 			exitMessage();
 			us.logout();
+			beginApp();
 			break;
 		default:
 			System.out.println("Invalid option. Please select an option from the menu.");
@@ -758,6 +839,7 @@ public class ConsoleUtil {
 			case "E":
 				System.out.println("Adios!");
 				us.logout();
+				beginApp();
 				break;
 			default:
 				System.out.println("Invalid option. Please select an option from the menu.");
@@ -840,6 +922,7 @@ public class ConsoleUtil {
 			case "E":
 				System.out.println("Adios!");
 				us.logout();
+				beginApp();
 				break;
 			default:
 				System.out.println("Invalid option. Please select an option from the menu.");
@@ -885,8 +968,10 @@ public class ConsoleUtil {
 		int rand = (int) (Math.random() * 7) + 0;
 
 		String msg = quotes[rand];
-
-		System.out.println("We appreciate your business. Have a wonderful day! \n \n" + msg);
+		
+		System.out.println("\n");
+		System.out.println("We appreciate your business. Have a wonderful day! \n \n \n" + msg);
+		System.out.println("\n\n");
 
 	}
 

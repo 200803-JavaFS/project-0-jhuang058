@@ -16,6 +16,7 @@ public class UserService {
 	public IUserDAO uDao = new UserDAO();
 	
 	public User login(String username, String password) {
+		log.info("logging in");
 		
 		try {
 			User user = findByUsername(username);
@@ -27,21 +28,10 @@ public class UserService {
 				int userType = user.getUserType();
 				String fname = user.getFirstName();
 				String lname = user.getLastName();
-				switch (userType) {
-				case 1:
-					log.info(fname+" "+lname+" logged in as Customer.");
-					break;
-				case 2:
-					log.info(fname+" "+lname+" logged in as Employee.");
-					break;
-				case 3:
-					log.info(fname+" "+lname+" logged in as Admin.");
-					break;
-				} 
 				
 				return user;
 			} else {
-				log.info("Log in attempt failed. Username and password do not match.");
+				System.out.println("Log in attempt failed. Username and password do not match.");
 				return null;
 			}
 			
@@ -54,6 +44,7 @@ public class UserService {
 	
 	public void logout() {
 		log.info("Logging out.");
+		System.out.println("=================================================");
 	}
 	
 
@@ -63,19 +54,20 @@ public class UserService {
 	}
 
 	public User registerCustomer(String username, String password, String fname, String lname, String dob) {
+		log.info("Registering new customer user");
 		if (!username.equals("") && findByUsername(username) == null) {
 
 			if (password.length() >= 6) {
-					log.info("New customer successfully registered!");
+					System.out.println("New customer successfully registered!");
 					User user = new User(username, password, fname, lname, Date.valueOf(dob), 1);
 					uDao.registerUser(user);
 					return user;
 			} else {
-				log.info("Registration failed. Passwords must have at least 6 characters.");
+				System.out.println("Registration failed. Passwords must have at least 6 characters.");
 				return null;
 			}	
 		} else {
-			log.info("Registration failed. Username is unavailable.");
+			System.out.println("Registration failed. Username is unavailable.");
 			return null;
 		}
 		

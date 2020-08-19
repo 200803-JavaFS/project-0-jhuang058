@@ -19,8 +19,6 @@ public class AccountTest {
 	public static Account a2;
 	double amtD;
 	double amtW;
-	double negative;
-	double overdrawn;
 	static double result;
 	static double[] resultT;
 
@@ -71,7 +69,7 @@ public class AccountTest {
 	
 	@Test
 	public void testTransfer() {
-		System.out.println("Testing withdraw");
+		System.out.println("Testing transfer");
 		resultT = as.transferMoney(a, a2, amtW);
 		double[] expectedOutput = {50.00, 150.00};
 		assertTrue(Arrays.equals(expectedOutput, resultT));

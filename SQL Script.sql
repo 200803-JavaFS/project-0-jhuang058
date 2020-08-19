@@ -28,7 +28,7 @@ CREATE TABLE ownership (
 
 
 
-ALTER SEQUENCE accounts_account_number_seq RESTART WITH 100000000 INCREMENT BY 1;
+ALTER SEQUENCE accounts_account_number_seq RESTART WITH 100000001 INCREMENT BY 1;
 
 
 
@@ -38,10 +38,10 @@ INSERT INTO users (username, pw, first_name, last_name, dob, user_type)
 			('a1', '123456', 'Harry', 'Potter', '1980-03-28', 3);
 
 INSERT INTO accounts (account_type, account_balance, account_status)
-	VALUES ('Savings', 3000.00, 'pending');
+	VALUES ('Savings', 3000.00, 'approved');
 
 
 
 INSERT INTO ownership (username_fk, account_number_fk)
-	VALUES ('c1', 100000000);
+	VALUES ('c1', 100000001);
 
